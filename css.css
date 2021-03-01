@@ -1,0 +1,88 @@
+body {
+    background: #eee;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: #888;
+    font-weight: 300;
+    text-align: center;
+}
+
+h3 {
+    color: initial;
+}
+
+.cardDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    opacity: 0;
+    width: 90vw;
+    margin: 20px 0;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 5px 0 #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: opacity 0.4s;
+    color: #888;
+}
+
+.card > p {
+    padding: 0 10%;
+    text-align: center;
+}
+
+.card > img {
+    height: 25%;
+    border-radius: 50%;
+    justify-self: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.card > span, .card > a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #888
+}
+
+i {
+    margin: 0.7rem;
+}
+
+.contacts > i {
+    font-size: 150%;
+    border: 1px solid #888;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 0.4rem;
+}
+
+@media only screen and (min-width: 600px) {
+    .card {
+        width: 40vw;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .card {
+        width: 20vw;
+    }
+}
